@@ -1,6 +1,6 @@
 baseURL = "https://www.example.com/"
 languageCode = "en-us"
-title = "Hugo Hero Theme"
+title = "Hudian Products Overseas"
 theme = "hero"
 
 [module]
@@ -12,7 +12,7 @@ theme = "hero"
   google_analytics_id=""
 
   [params.logo]
-    mobile = "images/logo-mobile.svg"
+    mobile = "images/icon.png"
     mobile_height = "36px"
     mobile_width = "36px"
     desktop = "images/logo1.png"
