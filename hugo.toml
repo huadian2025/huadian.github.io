@@ -1,6 +1,6 @@
 baseURL = "https://www.lgeam.com/"
 languageCode = "en-us"
-title = "Hudian Products Overseas"
+title = "Lab of Green Energy and Advanced Materials"
 theme = "hero"
 
 [module]
@@ -27,9 +27,6 @@ theme = "hero"
     meta_og_url = "https://hugo-hero.netlify.app"
     meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-hero-theme/master/images/tn.png"
     meta_og_description = "Hero is a multipurpose Hugo theme with fullscreen hero images and page sections. It contains content types for a business or portfolio site."
-    meta_twitter_card = "summary"
-    meta_twitter_site = "@zerostaticio"
-    meta_twitter_creator = "@zerostaticio"
 
 [[menu.main]]
 	name = "Services"
