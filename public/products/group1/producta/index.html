@@ -36,7 +36,7 @@
 
 
 
-<link href="/css/custom.css?1760571718" rel="stylesheet">
+<link href="/css/custom.css?1760571925" rel="stylesheet">
 
 
 
@@ -711,8 +711,52 @@
                         
 
                         <div id="post-content">
-                          <p><img src="/img/products/group1/image1.jpg" alt="alt">
-<img src="/img/products/group1/image2.jpg" alt="alt"></p>
+                          
+<div id="snapnav-1760571925287604953" class="snap-wrap">
+  <div class="snap-track">
+    
+      <div class="snap-slide">
+        <img src="/img/products/group1/image1.jpg" alt="" loading="lazy">
+      </div>
+    
+      <div class="snap-slide">
+        <img src="/img/products/group1/image2.jpg" alt="" loading="lazy">
+      </div>
+    
+  </div>
+  <button class="nav prev" type="button" aria-label="Previous">‹</button>
+  <button class="nav next" type="button" aria-label="Next">›</button>
+</div>
+
+<style>
+  #snapnav-1760571925287604953 { position: relative; }
+  #snapnav-1760571925287604953 .snap-track {
+    display: grid; grid-auto-flow: column; grid-auto-columns: 100%;
+    overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+  }
+  #snapnav-1760571925287604953 .snap-track::-webkit-scrollbar { display: none; }
+  #snapnav-1760571925287604953 .snap-slide { scroll-snap-align: center; }
+  #snapnav-1760571925287604953 img { width:100%; display:block; border-radius:8px; }
+  #snapnav-1760571925287604953 .nav {
+    position:absolute; top:50%; transform:translateY(-50%);
+    background:rgba(0,0,0,.45); color:#fff; border:0; width:40px; height:40px;
+    border-radius:999px; cursor:pointer;
+  }
+  #snapnav-1760571925287604953 .prev { left:8px; }  #snapnav-1760571925287604953 .next { right:8px; }
+</style>
+
+<script>
+(function(){
+  const root = document.getElementById('snapnav-1760571925287604953');
+  const track = root.querySelector('.snap-track');
+  const slides = root.querySelectorAll('.snap-slide');
+  const w = () => track.clientWidth;
+  root.querySelector('.prev').addEventListener('click', () => track.scrollBy({ left: -w(), behavior: 'smooth' }));
+  root.querySelector('.next').addEventListener('click', () => track.scrollBy({ left:  w(), behavior: 'smooth' }));
+})();
+</script>
+
+
 <p>This is the description for product A</p>
 
                         </div>

@@ -1,0 +1,41 @@
+{{ $id := printf "snapnav-%d" now.UnixNano }}
+<div id="{{ $id }}" class="snap-wrap">
+  <div class="snap-track">
+    {{ range .Params }}
+      <div class="snap-slide">
+        <img src="{{ . | safeURL }}" alt="" loading="lazy">
+      </div>
+    {{ end }}
+  </div>
+  <button class="nav prev" type="button" aria-label="Previous">‹</button>
+  <button class="nav next" type="button" aria-label="Next">›</button>
+</div>
+
+<style>
+  #{{ $id }} { position: relative; }
+  #{{ $id }} .snap-track {
+    display: grid; grid-auto-flow: column; grid-auto-columns: 100%;
+    overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+  }
+  #{{ $id }} .snap-track::-webkit-scrollbar { display: none; }
+  #{{ $id }} .snap-slide { scroll-snap-align: center; }
+  #{{ $id }} img { width:100%; display:block; border-radius:8px; }
+  #{{ $id }} .nav {
+    position:absolute; top:50%; transform:translateY(-50%);
+    background:rgba(0,0,0,.45); color:#fff; border:0; width:40px; height:40px;
+    border-radius:999px; cursor:pointer;
+  }
+  #{{ $id }} .prev { left:8px; }  #{{ $id }} .next { right:8px; }
+</style>
+
+<script>
+(function(){
+  const root = document.getElementById('{{ $id }}');
+  const track = root.querySelector('.snap-track');
+  const slides = root.querySelectorAll('.snap-slide');
+  const w = () => track.clientWidth;
+  root.querySelector('.prev').addEventListener('click', () => track.scrollBy({ left: -w(), behavior: 'smooth' }));
+  root.querySelector('.next').addEventListener('click', () => track.scrollBy({ left:  w(), behavior: 'smooth' }));
+})();
+</script>
+
