@@ -150,6 +150,28 @@ pluralizelisttitles = false
     parent     = "section.headervariations"
 
 [[menu.main]]
+    name       = "Products"
+    identifier = "menu.products"
+    url        = ""
+    weight     = 3
+
+[[menu.main]]
+    name       = "Group 1"
+    identifier = "section.group1"
+    url        = ""
+    weight     = 1
+    parent     = "menu.products"
+    post       = 1
+
+[[menu.main]]
+    name       = "Product A"
+    identifier = "section.group1.productA"
+    url        = "/products/group1/productA/"
+    weight     = 1
+    parent     = "section.group1"
+    post       = 1
+
+[[menu.main]]
     name       = "Portfolio"
     identifier = "menu.portfolio"
     url        = "/img/template-homepage.png"

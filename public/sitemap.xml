@@ -72,5 +72,9 @@
     <loc>http://localhost:1313/tags/ipsum/</loc>
   </url><url>
     <loc>http://localhost:1313/blog/1/01/01/</loc>
+  </url><url>
+    <loc>http://localhost:1313/products/group1/producta/</loc>
+  </url><url>
+    <loc>http://localhost:1313/products/</loc>
   </url>
 </urlset>
