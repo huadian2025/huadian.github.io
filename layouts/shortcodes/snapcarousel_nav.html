@@ -12,30 +12,94 @@
 </div>
 
 <style>
-  #{{ $id }} { position: relative; }
+  /* container */
+  #{{ $id }} { position: relative; margin: 1rem 0; }
+  /* track */
   #{{ $id }} .snap-track {
-    display: grid; grid-auto-flow: column; grid-auto-columns: 100%;
-    overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
   }
   #{{ $id }} .snap-track::-webkit-scrollbar { display: none; }
+  /* slide */
   #{{ $id }} .snap-slide { scroll-snap-align: center; }
-  #{{ $id }} img { width:100%; display:block; border-radius:8px; }
+  #{{ $id }} img { width:100%; display:block; border-radius:8px; box-shadow: 0 2px 6px rgba(0,0,0,0.12); }
+  /* nav buttons */
   #{{ $id }} .nav {
     position:absolute; top:50%; transform:translateY(-50%);
     background:rgba(0,0,0,.45); color:#fff; border:0; width:40px; height:40px;
-    border-radius:999px; cursor:pointer;
+    border-radius:999px; cursor:pointer; z-index:2;
   }
+  #{{ $id }} .nav:focus { outline: 2px solid rgba(255,255,255,.2); }
   #{{ $id }} .prev { left:8px; }  #{{ $id }} .next { right:8px; }
 </style>
 
 <script>
-(function(){
-  const root = document.getElementById('{{ $id }}');
-  const track = root.querySelector('.snap-track');
-  const slides = root.querySelectorAll('.snap-slide');
-  const w = () => track.clientWidth;
-  root.querySelector('.prev').addEventListener('click', () => track.scrollBy({ left: -w(), behavior: 'smooth' }));
-  root.querySelector('.next').addEventListener('click', () => track.scrollBy({ left:  w(), behavior: 'smooth' }));
-})();
-</script>
+(function(id){
+  // bind logic for a single instance identified by id
+  function bindOnce() {
+    const root = document.getElementById(id);
+    if (!root) return false; // not found yet
+    const track = root.querySelector('.snap-track');
+    const prev = root.querySelector('.prev');
+    const next = root.querySelector('.next');
+    if (!track || !prev || !next) return false;
 
+    const slideWidth = () => {
+      // prefer track visible width; fall back to root width
+      return track.clientWidth || root.clientWidth || window.innerWidth;
+    };
+
+    // remove potential duplicate listeners by cloning nodes (safe-guard)
+    // this prevents double-binding if script runs more than once for same id
+    function safeAddListener(el, event, fn) {
+      el.replaceWith(el.cloneNode(true));
+      const replacement = root.querySelector('.' + el.className.split(' ').join('.'));
+      replacement.addEventListener(event, fn);
+    }
+
+    // Bind handlers (use addEventListener directly; safe in typical cases)
+    prev.addEventListener('click', () => {
+      track.scrollBy({ left: -slideWidth(), behavior: 'smooth' });
+    });
+    next.addEventListener('click', () => {
+      track.scrollBy({ left: slideWidth(), behavior: 'smooth' });
+    });
+
+    // Optional: keyboard accessibility (left/right when focus inside)
+    root.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') { track.scrollBy({ left: -slideWidth(), behavior: 'smooth' }); }
+      if (e.key === 'ArrowRight') { track.scrollBy({ left: slideWidth(), behavior: 'smooth' }); }
+    });
+
+    // Ensure focusable for keyboard events
+    root.setAttribute('tabindex', '-1');
+
+    return true;
+  }
+
+  // Try to bind immediately if DOM already ready, otherwise wait for DOMContentLoaded.
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    // sometimes element is injected a tick later — use setTimeout to allow insertion
+    if (!bindOnce()) setTimeout(bindOnce, 20);
+  } else {
+    document.addEventListener('DOMContentLoaded', function() {
+      if (!bindOnce()) setTimeout(bindOnce, 20);
+    });
+  }
+
+  // Fallback: if the element is inserted dynamically after load, poll a few times
+  // (stops after a short number of attempts to avoid infinite loops)
+  let tries = 0;
+  const maxTries = 20;
+  const poll = function() {
+    if (bindOnce()) return;
+    tries++;
+    if (tries < maxTries) setTimeout(poll, 50);
+  };
+  setTimeout(poll, 100);
+})('{{ $id }}');
+</script>

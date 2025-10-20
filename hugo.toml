@@ -164,7 +164,7 @@ pluralizelisttitles = false
     post       = 1
 
 [[menu.main]]
-    name       = "Product A"
+    name       = "Huadian Heavy Industies CO."
     identifier = "section.group1.productA"
     url        = "/products/group1/productA/"
     weight     = 1
@@ -360,7 +360,7 @@ pluralizelisttitles = false
     parent     = "section.ap-blog"
 
 [[menu.main]]
-    name       = "Blog"
+    name       = "News"
     identifier = "menu.blog"
     url        = "/blog/"
     weight     = 5

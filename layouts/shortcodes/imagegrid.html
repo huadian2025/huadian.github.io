@@ -1,0 +1,36 @@
+{{ $id := printf "grid-%d" now.UnixNano }}
+<div id="{{ $id }}" class="image-grid">
+  {{ range .Params }}
+    <div class="grid-item">
+      <img src="{{ . | safeURL }}" alt="" loading="lazy">
+    </div>
+  {{ end }}
+</div>
+
+<style>
+  #{{ $id }} {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+  }
+
+  #{{ $id }} .grid-item {
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  #{{ $id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .3s ease, box-shadow .3s ease;
+    display: block;
+  }
+
+  #{{ $id }} img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  }
+</style>
