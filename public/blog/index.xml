@@ -6,15 +6,8 @@
     <description>Recent content in Blog on LGEAM</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Aug 2021 21:29:20 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>公司介绍</title>
-      <link>http://localhost:1313/blog/2025/10/14/</link>
-      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025/10/14/</guid>
-      <description>&lt;p&gt;欢迎访问我们的公司介绍页面。&lt;/p&gt;&#xA;&lt;p&gt;我们主要业务包括：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;电力工程&lt;/li&gt;&#xA;&lt;li&gt;技术研发&lt;/li&gt;&#xA;&lt;li&gt;能源管理&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/huadian-logo.png&#34; alt=&#34;公司 Logo&#34;&gt;&#xA;&lt;a href=&#34;http://localhost:1313/files/company-intro.pdf&#34;&gt;下载公司介绍 PDF&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Categories Post</title>
       <link>http://localhost:1313/blog/2021/08/01/</link>

@@ -156,20 +156,62 @@ pluralizelisttitles = false
     weight     = 3
 
 [[menu.main]]
-    name       = "Group 1"
+    name       = "Huadian Heavy Industries CO."
     identifier = "section.group1"
-    url        = ""
+    url        = "/products/group1/"
     weight     = 1
     parent     = "menu.products"
     post       = 1
+[[menu.main]]
+  name       = "CHEC Hydrogen Energy Business"
+  identifier = "section.group2"
+  url        = "/products/group2/"
+  parent     = "menu.products"
+  weight     = 2
+  post       = 1
 
 [[menu.main]]
-    name       = "Huadian Heavy Industies CO."
-    identifier = "section.group1.productA"
-    url        = "/products/group1/productA/"
+    name       = "Introduction"
+    identifier = "section.group1.introduction"
+    url        = "/products/group1/introduction/"
     weight     = 1
     parent     = "section.group1"
-    post       = 1
+
+[[menu.main]]
+    name       = "Businesses"
+    identifier = "section.group1.businesses"
+    url        = "/products/group1/businesses/"
+    weight     = 2
+    parent     = "section.group1"
+
+[[menu.main]]
+    name       = "Overseas Engineering & Equipment"
+    identifier = "section.group1.overseas-equipment"
+    url        = "/products/group1/overseas-engineering&equipment/"
+    weight     = 3
+    parent     = "section.group1"
+
+[[menu.main]]
+    name       = "Achievements"
+    identifier = "section.group1.achievements"
+    url        = "/products/group1/achievements/"
+    weight     = 4
+    parent     = "section.group1"
+
+[[menu.main]]
+  name       = "CHEC Hydrogen Energy Business"
+  url        = "/products/group2/CHEC_HydrogenEnergyBusiness/"
+  parent     = "section.group2"
+
+[[menu.main]]
+  name       = "Hydrogen Fabrication Bases & Materials"
+  url        = "/products/group2/Hydrogen_FabricationBases&Products&Materials/"
+  parent     = "section.group2"
+
+[[menu.main]]
+  name       = "Projects & Advantages"
+  url        = "/products/group2/Projects&Advantages/"
+  parent     = "section.group2"
 
 [[menu.main]]
     name       = "Portfolio"
