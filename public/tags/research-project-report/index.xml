@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Research Project Report on LGEAM</title>
-    <link>https://www.lgeam.com/tags/research-project-report/</link>
+    <link>http://localhost:1313/tags/research-project-report/</link>
     <description>Recent content in Research Project Report on LGEAM</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Sep 2025 18:25:30 +0800</lastBuildDate>
-    <atom:link href="https://www.lgeam.com/tags/research-project-report/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/research-project-report/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Attending the 27th National Electrostatic Academic Annual Conference of the Chinese Physical Society</title>
-      <link>https://www.lgeam.com/blog/2025/09/26/</link>
+      <link>http://localhost:1313/blog/2025/09/26/</link>
       <pubDate>Fri, 26 Sep 2025 18:25:30 +0800</pubDate>
-      <guid>https://www.lgeam.com/blog/2025/09/26/</guid>
+      <guid>http://localhost:1313/blog/2025/09/26/</guid>
       <description>&lt;p&gt;2025年9月19日，中国物理学会第二十七届全国静电学术年会在南京召开。LEMS课题组刘晟洋同学参加此次会议并做口头报告。本次年会由中国物理学会静电专业委员会主办，联合多家权威机构共同承办，是国内静电领域的重要学术活动。会议为从事相关研究的专家学者提供了交流平台，旨在探讨静电学科的研究进展、技术应用与未来发展方向。&lt;/p&gt;</description>
     </item>
   </channel>

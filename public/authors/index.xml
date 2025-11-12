@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on LGEAM</title>
-    <link>https://www.lgeam.com/authors/</link>
+    <link>http://localhost:1313/authors/</link>
     <description>Recent content in Authors on LGEAM</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Sep 2025 18:25:30 +0800</lastBuildDate>
-    <atom:link href="https://www.lgeam.com/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LEMS Editorial Department</title>
-      <link>https://www.lgeam.com/authors/lems-editorial-department/</link>
+      <link>http://localhost:1313/authors/lems-editorial-department/</link>
       <pubDate>Fri, 26 Sep 2025 18:25:30 +0800</pubDate>
-      <guid>https://www.lgeam.com/authors/lems-editorial-department/</guid>
+      <guid>http://localhost:1313/authors/lems-editorial-department/</guid>
       <description></description>
     </item>
   </channel>
