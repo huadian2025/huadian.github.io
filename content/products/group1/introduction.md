@@ -2,11 +2,7 @@
 title = "Huadian Introduction"
 weight = 1
 +++
-
-{{< snapcarousel_nav 
-"/img/products/group1/1index/huadian_index.png"
-"/img/products/group1/1index/linian1.png"
->}}
+![Introduction](/img/products/group1/1index/linian1.png)
 
 {{< snapcarousel_nav 
 "/img/products/group1/2ABOUT_US/a1.png"

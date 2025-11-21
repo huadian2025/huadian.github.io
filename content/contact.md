@@ -4,8 +4,28 @@ id = "contact"
 type = "page"
 +++
 
-# We are here to help you
+# Contact Huadian Heavy Industries Co., Ltd.
 
-Are you curious about something? Do you have some kind of problem with our products? As am hastily invited settled at limited civilly fortune me. Really spring in extent an by. Judge but built gay party world. Of so am he remember although required. Bachelor unpacked be advanced at. Confined in declared marianne is vicinity.
+We are delighted that you are interested in Huadian Heavy Industries Co., Ltd., a leading company in power equipment, electrical materials, and smart energy solutions. Our mission is to deliver innovative technologies and high-quality products to support the global energy and power industry.
 
-Please feel free to contact us, our customer service center is working for you 24/7.
+## How to Reach Us
+
+We welcome inquiries from prospective clients, partners, and researchers worldwide. Our team is ready to provide information, answer questions, and explore collaboration opportunities.
+
+- **Email:** [contact@huadian.com](mailto:contact@huadian.com)  
+- **Phone:** +86-XXX-XXXXXXX  
+- **Address:** 123 Huadian Road, Beijing, China  
+
+## Inquiry Topics
+
+You may contact us regarding:
+
+- Product information and specifications  
+- Research collaborations and academic exchanges  
+- Business partnership opportunities  
+- Technical support and consultation  
+
+## Our Commitment
+
+Thank you for your interest in Huadian Heavy Industries Co., Ltd.  
+We strive to respond promptly and professionally, ensuring you receive the information and assistance you need.

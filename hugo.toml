@@ -37,105 +37,30 @@ pluralizelisttitles = false
     weight     = 1
     parent     = "menu.home"
 
+
 [[menu.main]]
-    name       = "Application"
-    url        = "/"
+    identifier = "laboratory"
+    name       = "laboratory"
+    url        = ""
     weight     = 2
-    parent     = "menu.home"
 
 [[menu.main]]
-    name       = "Startup"
-    url        = "/"
-    weight     = 3
-    parent     = "menu.home"
+parent     = "laboratory"
+name       = "About LEMS"
+url        = "/laboratory/"
+weight     = 1
 
-#[[menu.main]]
-    #name       = "Features"
-    #identifier = "menu.features"
-    #url        = "/img/template-easy-customize.png"
-   #weight     = 3
+[[menu.main]]
+parent     = "laboratory"
+name       = "Research Areas"
+url        = "/laboratory/"
+weight     = 2
 
-#[[menu.main]]
-#    name       = "Shortcodes"
-#    identifier = "section.shortcodes"
-#    url        = ""
-#    weight     = 1
-#    parent     = "menu.features"
-#    post       = 1
-
-#[[menu.main]]
-#    name       = "Header variations"
-#    identifier = "section.headervariations"
-#    url        = ""
-#    weight     = 2
-#    parent     = "menu.features"
-#    post       = 2
-
-#[[menu.main]]
-#    name       = "Accordions"
-#    url        = ""
-#    weight     = 1
-#    parent     = "section.shortcodes"
-
-#[[menu.main]]
-#    name       = "Alerts"
-#    url        = ""
-#    weight     = 2
-#    parent     = "section.shortcodes"
-
-#[[menu.main]]
-#    name       = "Buttons"
-#    url        = ""
-#    weight     = 3
-#    parent     = "section.shortcodes"
-
-#[[menu.main]]
-#    name       = "Content Boxes"
-#    url        = ""
-#    weight     = 4
-#    parent     = "section.shortcodes"
-
-#[[menu.main]]
-#    name       = "Horizontal Blocks"
-#    url        = ""
-#    weight     = 5
-#    parent     = "section.shortcodes"
-
-#[[menu.main]]
-#    name       = "Pagination"
-#    url        = ""
-#    weight     = 6
-#    parent     = "section.shortcodes"
-
-#[[menu.main]]
-#    name       = "Tabs"
-#    url        = ""
-#    weight     = 7
-#    parent     = "section.shortcodes"
-
-#[[menu.main]]
-#    name       = "Typography"
-#    url        = ""
-#    weight     = 8
-#    parent     = "section.shortcodes"
-
-#[[menu.main]]
-#    name       = "Default Sticky Header"
-#    url        = ""
-#    weight     = 1
-#    parent     = "section.headervariations"
-
-#[[menu.main]]
-#    name       = "No Sticky Header"
-#    url        = ""
-#    weight     = 2
-#    parent     = "section.headervariations"
-
-#[[menu.main]]
-#    name       = "Light Header"
-#    url        = ""
-#    weight     = 3
-#    parent     = "section.headervariations"
+[[menu.main]]
+parent     = "laboratory"
+name       = "Members"
+url        = "/laboratory/"
+weight     = 3
 
 [[menu.main]]
     name       = "Products"
@@ -201,205 +126,11 @@ pluralizelisttitles = false
   url        = "/products/group2/Projects&Advantages/"
   parent     = "section.group2"
 
-#[[menu.main]]
-    #name       = "Portfolio"
-    #identifier = "menu.portfolio"
-    #url        = "/img/template-homepage.png"
-    #weight     = 3
-
-#[[menu.main]]
-#   name       = "Portfolio"
-#    identifier = "section.portfolio"
-#    url        = ""
-#    weight     = 1
-#    parent     = "menu.portfolio"
-#    post       = 1
-
-#[[menu.main]]
-#    name       = "2 Columns"
-#    url        = ""
-#    weight     = 1
-#    parent     = "section.portfolio"
-
-#[[menu.main]]
-#    name       = "2 Columns With Negative Space"
-#    url        = ""
-#    weight     = 2
-#    parent     = "section.portfolio"
-
-#[[menu.main]]
-#    name       = "3 Columns"
-#    url        = ""
-#    weight     = 3
-#    parent     = "section.portfolio"
-
-#[[menu.main]]
-#    name       = "3 Columns With Negative Space"
-#    url        = ""
-#    weight     = 4
-#    parent     = "section.portfolio"
-
-#[[menu.main]]
-#    name       = "4 Columns"
-#    url        = ""
-#    weight     = 5
-#    parent     = "section.portfolio"
-
-#[[menu.main]]
-#    name       = "4 Columns With Negative Space"
-#    url        = ""
-#    weight     = 6
-#    parent     = "section.portfolio"
-
-#[[menu.main]]
-#    name       = "Portfolio - detail"
-#    url        = ""
-#    weight     = 7
-#    parent     = "section.portfolio"
-
-#[[menu.main]]
-#    name       = "Portfolio - detail 2"
-#    url        = ""
-#    weight     = 8
-#    parent     = "section.portfolio"
-
-#[[menu.main]]
-#    name       = "About"
-#    identifier = "section.about"
-#    url        = ""
-#    weight     = 2
-#    parent     = "menu.portfolio"
-#    post       = 2
-
-#[[menu.main]]
-#    name       = "About Us"
-#    url        = ""
-#    weight     = 1
-#    parent     = "section.about"
-
-#[[menu.main]]
-#    name       = "Our Team"
-#    url        = ""
-#    weight     = 2
-#    parent     = "section.about"
-
-#[[menu.main]]
-#    name       = "Marketing"
-#    identifier = "section.marketing"
-#    url        = ""
-#    weight     = 3
-#    parent     = "menu.portfolio"
-#    post       = 2
-
-#[[menu.main]]
-#    name       = "Packages"
-#    url        = ""
-#    weight     = 1
-#    parent     = "section.marketing"
-
-#[[menu.main]]
-   # name       = "All Pages"
-   # identifier = "menu.allpages"
-   # url        = ""
-   # weight     = 4
-
-#[[menu.main]]
-    #name       = "Home"
-    #identifier = "section.ap-home"
-    #url        = ""
-    #weight     = 1
-    #parent     = "menu.allpages"
-    #post       = 1
-
-#[[menu.main]]
-    #name       = "About"
-    #identifier = "section.ap-about"
-    #url        = ""
-    #weight     = 2
-    #parent     = "menu.allpages"
-    #post       = 1
-
-#[[menu.main]]
-    #name       = "Marketing"
-    #identifier = "section.ap-marketing"
-    #url        = ""
-    #weight     = 3
-    #parent     = "menu.allpages"
-    #post       = 1
-
-#[[menu.main]]
-    #name       = "Portfolio"
-    #identifier = "section.ap-portfolio"
-    #url        = ""
-    #weight     = 1
-    #parent     = "menu.allpages"
-    #post       = 2
-
-#[[menu.main]]
-    #name       = "User Pages"
-    #identifier = "section.ap-userpages"
-    #url        = ""
-    #weight     = 2
-    #parent     = "menu.allpages"
-    #post       = 2
-
-#[[menu.main]]
-    #name       = "Shop"
-    #identifier = "section.ap-shop"
-    #url        = ""
-    #weight     = 1
-    #parent     = "menu.allpages"
-    #post       = 3
-
-#[[menu.main]]
-    #name       = "Shop - Order Process"
-    #identifier = "section.ap-shoporderprocess"
-    #url        = ""
-    #weight     = 2
-    #parent     = "menu.allpages"
-    #post       = 3
-
-#[[menu.main]]
-    #name       = "Contact"
-    #identifier = "section.ap-contact"
-    #url        = ""
-    #weight     = 1
-    #parent     = "menu.allpages"
-    #post       = 4
-
-#[[menu.main]]
-    #name       = "Pages"
-    #identifier = "section.ap-pages"
-    #url        = ""
-    #weight     = 2
-    #parent     = "menu.allpages"
-    #post       = 4
-
-#[[menu.main]]
-    #name       = "Blog"
-    #identifier = "section.ap-blog"
-    #url        = "/blog/"
-    #weight     = 3
-    #parent     = "menu.allpages"
-    #post       = 4
-
-#[[menu.main]]
-    #name       = "Blog Listing Big"
-    #url        = "/blog/"
-    #weight     = 1
-    #parent     = "section.ap-blog"
-
 [[menu.main]]
     name       = "News"
     identifier = "menu.blog"
     url        = "/blog/"
     weight     = 5
-
-[[menu.main]]
-    identifier = "laboratory"
-    name       = "Laboratory"
-    url        = "/laboratory/"
-    weight     = 6
 
 [[menu.main]]
     identifier = "contact"
@@ -428,14 +159,9 @@ pluralizelisttitles = false
     url = "https://facebook.com"
     pre = "<i class='fab fa-2x fa-facebook'></i>"
 
-[[menu.topbar]]
-    weight = 4
-    name = "X"
-    url = "https://x.com"
-    pre = "<i class='fab fa-2x fa-x-twitter'></i>"
 
 [[menu.topbar]]
-    weight = 5
+    weight = 4
     name = "Email"
     url = "mailto:hello@universal.com"
     pre = "<i class='fas fa-2x fa-envelope'></i>"
@@ -457,8 +183,8 @@ pluralizelisttitles = false
     enableGoogleMaps = true
     googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
 
-    latitude = "-12.043333"
-    longitude = "-77.028333"
+    latitude = "33.22657"
+    longitude = "-8.48742"
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "blue"
@@ -497,8 +223,8 @@ pluralizelisttitles = false
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
-    about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
-    copyright = "Copyright (c) 2015 - 2016, YourCompany; all rights reserved."
+    about_us = "<p>Huadian Heavy Industries Co., Ltd. (Huadian) is a leading enterprise in power equipment, electrical materials, and smart energy solutions. We are committed to technological innovation, international collaboration, and providing high-quality products to support the global energy and power industry.</p>"
+    copyright = "Copyright (c) 2025, Huadian Heavy Industries Co., Ltd.; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -511,14 +237,14 @@ pluralizelisttitles = false
     logo = "img/logo.png"
     logo_small = "img/logo-small.png"
     contact_url = "/contact"
-    address = """<p class="text-uppercase"><strong>Universal Ltd.</strong>
-        <br>13/25 New Avenue
-        <br>Newtown upon River
-        <br>45Y 73J
-        <br>England
-        <br>
-        <strong>Great Britain</strong>
-      </p>
+    address = """<p class="text-uppercase"><strong>Chouaïb Doukkali University</strong>
+  <br>Avenue Jabran Khalil, B.P. 299
+  <br>El Jadida
+  <br>24000
+  <br>Morocco
+  <br>
+  <strong>Kingdom of Morocco</strong>
+</p>
       """
 
 [permalinks]
