@@ -14,3 +14,8 @@
 .box-simple {
     min-height: 230px;
 }
+
+.jumbotron {
+  background: url('/img/new-background.jpg') center center repeat !important;
+  background-size: cover;
+}
