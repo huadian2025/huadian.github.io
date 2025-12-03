@@ -12,9 +12,6 @@ We are delighted that you are interested in Huadian Heavy Industries Co., Ltd., 
 
 We welcome inquiries from prospective clients, partners, and researchers worldwide. Our team is ready to provide information, answer questions, and explore collaboration opportunities.
 
-- **Email:** [contact@huadian.com](mailto:contact@huadian.com)  
-- **Phone:** +86-XXX-XXXXXXX  
-- **Address:** 123 Huadian Road, Beijing, China  
 
 ## Inquiry Topics
 

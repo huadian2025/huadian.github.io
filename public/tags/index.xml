@@ -22,5 +22,12 @@
       <guid>http://localhost:1313/tags/research-project-report/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Ceremony</title>
+      <link>http://localhost:1313/tags/ceremony/</link>
+      <pubDate>Fri, 28 Feb 2025 01:12:30 +0800</pubDate>
+      <guid>http://localhost:1313/tags/ceremony/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
