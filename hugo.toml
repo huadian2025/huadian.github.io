@@ -176,7 +176,7 @@ weight     = 3
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io endpoint url
-    formspree_action = "https://formsubmit.co/kggfsale01@163.com"
+    formspree_action = "https://formsubmit.co/msk6771@163.com"
     contact_form_ajax = false
 
     # Formspree form supports Google reCAPTCHA Key (type v2).
@@ -303,3 +303,8 @@ weight     = 3
     category = "categories"
     tag = "tags"
     author = "authors"
+    
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
